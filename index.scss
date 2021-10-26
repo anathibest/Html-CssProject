@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+
+	.main__wrapper{
+		grid-template-columns: 20vw 80vw;
+		overflow: hidden;
+		display: grid;
+		height: 100%;
+
+		.side__wrapper{
+			background-color: purple;
+			flex-direction: column;
+			display: flex;
+			height: 100vh;
+			color: #e1e1e1;
+			padding: 30% .5em 0;
+			gap: 1em;
+
+			small{
+				display: block;
+				margin-left: 1em;
+			}
+		}
+
+		.music__wrapper{
+			height: 100vh;
+
+			.top__wrapper{
+				background-color: rgb(31, 31, 31);
+				height: 10%;
+			}
+
+			.music__content{
+				flex-direction: column;
+				display: flex;
+				height: 90%;
+
+				.music__heading{
+					background-color: rgb(44, 44, 44);
+					border-bottom: 1px solid #e1e1e1;
+					display: flex;
+					color: #eee;
+					height: 3%;
+
+					small{
+						border-right: 1px solid #e1e1e1;
+					}
+				}
+
+				.music{
+					overflow: scroll;
+					height: 97%;
+
+					.track{
+						padding: .3em 0;
+						display: flex;
+						color: #eee;
+
+						&:nth-child(odd){
+							background-color: rgb(44, 44, 44);
+						}
+						&:nth-child(even){
+							background-color: rgb(67, 67, 67);
+						}
+
+						&.active{
+							background-color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+}

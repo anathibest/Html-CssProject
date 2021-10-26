@@ -1,0 +1,98 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+body .main__wrapper {
+  -ms-grid-columns: 20vw 80vw;
+      grid-template-columns: 20vw 80vw;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+}
+
+body .main__wrapper .side__wrapper {
+  background-color: purple;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  color: #e1e1e1;
+  padding: 30% .5em 0;
+  gap: 1em;
+}
+
+body .main__wrapper .side__wrapper small {
+  display: block;
+  margin-left: 1em;
+}
+
+body .main__wrapper .music__wrapper {
+  height: 100vh;
+}
+
+body .main__wrapper .music__wrapper .top__wrapper {
+  background-color: #1f1f1f;
+  height: 10%;
+}
+
+body .main__wrapper .music__wrapper .music__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90%;
+}
+
+body .main__wrapper .music__wrapper .music__content .music__heading {
+  background-color: #2c2c2c;
+  border-bottom: 1px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #eee;
+  height: 3%;
+}
+
+body .main__wrapper .music__wrapper .music__content .music__heading small {
+  border-right: 1px solid #e1e1e1;
+}
+
+body .main__wrapper .music__wrapper .music__content .music {
+  overflow: scroll;
+  height: 97%;
+}
+
+body .main__wrapper .music__wrapper .music__content .music .track {
+  padding: .3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #eee;
+}
+
+body .main__wrapper .music__wrapper .music__content .music .track:nth-child(odd) {
+  background-color: #2c2c2c;
+}
+
+body .main__wrapper .music__wrapper .music__content .music .track:nth-child(even) {
+  background-color: #434343;
+}
+
+body .main__wrapper .music__wrapper .music__content .music .track.active {
+  background-color: red;
+}
+/*# sourceMappingURL=index.css.map */
